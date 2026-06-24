@@ -7,7 +7,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Mini Program",
+    "navigationBarTitleText": "掌上生活",
     "navigationBarTextStyle":"black"
   }
 }
