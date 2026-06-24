@@ -1,1 +1,18 @@
-{"setting":{"urlCheck":true,"es6":true,"postcss":true,"minified":true,"newFeature":true,"autoCompile":true,"compileHotReLoad":true,"nativeCompile":true,"useCompilerPlugins":["sass"]},"appid":"tt9d31eb8c023fbfa701","projectname":"星河补给站","douyinProjectType":"native"}
+{
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "autoCompile": true,
+        "compileHotReLoad": true,
+        "nativeCompile": true,
+        "useCompilerPlugins": [
+            "sass"
+        ]
+    },
+    "appid": "ttd72ea19348128d0c01",
+    "projectname": "几分姿色",
+    "douyinProjectType": "native"
+}
