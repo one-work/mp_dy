@@ -15,14 +15,14 @@ Page({
           },
           data: {
             code: res.code,
-            anonymousCode: anonymousCode,
+            anonymousCode: res.anonymousCode,
             isLogin: res.isLogin,
             appid: APPID,
             ...query
           },
           success: res => {
             tt.redirectTo({
-              url: `/pages/index/index?url=${encodeURIComponent(res.data.url)}`
+              url: `/pages/web/index?url=${encodeURIComponent(res.data.url)}`
             })
           },
           fail: res => {
