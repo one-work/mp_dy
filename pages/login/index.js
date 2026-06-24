@@ -15,6 +15,8 @@ Page({
           },
           data: {
             code: res.code,
+            anonymousCode: anonymousCode,
+            isLogin: res.isLogin,
             appid: APPID,
             ...query
           },
