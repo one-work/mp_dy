@@ -1,14 +1,18 @@
 const app = getApp()
 const HOST = 'https://shu.ren'
 
-
 Page({
-  data: {
-    url: 'https://shu.ren/bench/facilitates'
-  },
-
-  onLoad() {
-    console.log('Welcome to Mini Code')
+  onLoad(query) {
+    console.debug('index onLoad:', query)
+    if (query.url) {
+      this.setData({
+        url: decodeURIComponent(query.url)
+      })
+    } else {
+      this.setData({
+        url: 'https://shu.ren/bench/facilitates'
+      })
+    }
   },
 
   onMessage(options) {
