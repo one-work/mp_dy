@@ -15,6 +15,17 @@ Page({
     }
   },
 
+  onShow(e) {
+    const url = tt.getStorageSync('url')
+    tt.removeStorageSync('url')
+    if (url) {
+      console.debug('页面再次显示', url)
+      this.setData({
+        url: url
+      })
+    }
+  },
+
   onMessage(options) {
     console.debug(options)
     this.login()

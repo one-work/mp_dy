@@ -3,7 +3,7 @@
 </view>
 <navigator
   url="/pages/web/index"
-  open-type="navigate" 
+  open-type="redirect" 
   hover-class="navigator-hover"
   hover-start-time="50" 
   hover-stay-time="400" 

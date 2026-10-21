@@ -20,9 +20,16 @@ Page({
             appid: APPID,
             ...query
           },
-          success: res => {
-            tt.redirectTo({
-              url: `/pages/web/index?url=${encodeURIComponent(res.data.url)}`
+          success: response => {
+            tt.setStorageSync('url', response.data.url)
+            tt.navigateBack({
+              fail: res => {
+                wx.removeStorageSync('url')
+                console.debug('nav back fail', res)
+              },
+              success: res => {
+                console.debug('nav back success', response.data)
+              }
             })
           },
           fail: res => {
