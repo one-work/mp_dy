@@ -1,5 +1,5 @@
 const app = getApp()
-const HOST = 'https://shu.ren'
+const HOST = 'https://admin.one.work'
 
 Page({
   onLoad(query) {
@@ -10,7 +10,7 @@ Page({
       })
     } else {
       this.setData({
-        url: 'https://shu.ren/bench/facilitates'
+        url: 'https://admin.one.work'
       })
     }
   },
@@ -19,5 +19,4 @@ Page({
     console.debug(options)
     this.login()
   }
-
 })

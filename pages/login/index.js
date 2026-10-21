@@ -1,14 +1,14 @@
-const AUTH_HOST = 'https://shu.ren'
 const APPID = tt.getEnvInfoSync().microapp.appId
 
 Page({
   onLoad(query) {
     console.debug('login onLoad query:', query)
+    const url = decodeURIComponent(query.url)
 
     tt.login({
       success: res => {
         tt.request({
-          url: AUTH_HOST + '/douyin/douyin_users',
+          url: url,
           method: 'POST',
           header: {
             Accept: 'application/json'
