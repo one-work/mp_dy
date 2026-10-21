@@ -1,6 +1,3 @@
-<view class="icon-wrapper">
-  <image class="icon-image" src="/logo.png"></image>
-</view>
 <navigator
   url="/pages/web/index"
   open-type="redirect" 
@@ -8,4 +5,9 @@
   hover-start-time="50" 
   hover-stay-time="400" 
   hover-stop-propagation="{{false}}"
->买票</navigator>
+>
+  <view class="icon-wrapper">
+    <image class="icon-image" src="/logo.png"></image>
+  </view>
+  <text>下单助手</text>
+</navigator>
