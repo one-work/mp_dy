@@ -9,5 +9,6 @@
   <view class="icon-wrapper">
     <image class="icon-image" src="/logo.png"></image>
   </view>
-  <text>下单助手</text>
+  <view>OneWork超级个体</view>
+  <view>进入应用</view>
 </navigator>
