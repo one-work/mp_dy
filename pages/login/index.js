@@ -24,7 +24,7 @@ Page({
             tt.setStorageSync('url', response.data.url)
             tt.navigateBack({
               fail: res => {
-                wx.removeStorageSync('url')
+                tt.removeStorageSync('url')
                 console.debug('nav back fail', res)
               },
               success: res => {
@@ -46,7 +46,7 @@ Page({
       },
       fail: res => {
         tt.showModal({
-          title: 'wx.login fail',
+          title: '登录失败',
           content: JSON.stringify(res)
         })
       }
