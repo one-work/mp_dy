@@ -1,6 +1,3 @@
-const app = getApp()
-const HOST = 'https://admin.one.work'
-
 Page({
   onLoad(query) {
     console.debug('index onLoad:', query)
@@ -15,7 +12,7 @@ Page({
     }
   },
 
-  onShow(e) {
+  onShow(_e) {
     const url = tt.getStorageSync('url')
     tt.removeStorageSync('url')
     if (url) {

@@ -27,7 +27,7 @@ Page({
                 tt.removeStorageSync('url')
                 console.debug('nav back fail', res)
               },
-              success: res => {
+              success: _res => {
                 console.debug('nav back success', response.data)
               }
             })
@@ -35,7 +35,7 @@ Page({
           fail: res => {
             let content = JSON.stringify(res)
             if (res.errno === 600002) {
-              content = `${res.errMsg}：${AUTH_HOST}`
+              content = `${res.errMsg}：${url}`
             }
             tt.showModal({
               title: `Login page login request fail`,
