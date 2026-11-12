@@ -9,5 +9,5 @@
   <view class="icon-wrapper">
     <image class="icon-image" src="/logo.png"></image>
   </view>
-  <view>ERP</view>
+  <view class="text-primary">ERP</view>
 </navigator>
