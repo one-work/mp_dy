@@ -5,6 +5,11 @@ Page({
       this.setData({
         url: decodeURIComponent(query.url)
       })
+    } else if (query.path) {
+      const path = decodeURIComponent(query.path)
+      this.setData({
+        url: 'https://admin.one.work' + (path.startsWith('/') ? path : `/${path}`)
+      })
     } else {
       this.setData({
         url: 'https://admin.one.work'

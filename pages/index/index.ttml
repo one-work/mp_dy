@@ -9,5 +9,19 @@
   <view class="icon-wrapper">
     <image class="icon-image" src="/logo.png"></image>
   </view>
-  <view class="text-primary">ERP</view>
+  <view class="text-primary mt-1">工作台</view>
+</navigator>
+
+<navigator
+  url="/pages/web/index?path=org/board"
+  open-type="redirect" 
+  hover-class="navigator-hover"
+  hover-start-time="50" 
+  hover-stay-time="400" 
+  hover-stop-propagation="{{false}}"
+>
+  <view class="icon-wrapper">
+    <image class="icon-image" src="/logo.png"></image>
+  </view>
+  <view class="text-info mt-1">个人中心</view>
 </navigator>
