@@ -7,7 +7,7 @@
   hover-stop-propagation="{{false}}"
 >
   <view class="icon-wrapper">
-    <image class="icon-image" src="/logo.png"></image>
+    <image class="icon-image" src="/assets/logo.png"></image>
   </view>
   <view class="text-primary mt-1">工作台</view>
 </navigator>
@@ -21,7 +21,7 @@
   hover-stop-propagation="{{false}}"
 >
   <view class="icon-wrapper">
-    <image class="icon-image" src="/logo.png"></image>
+    <image class="icon-image" src="/assets/light/list.svg"></image>
   </view>
   <view class="text-info mt-1">个人中心</view>
 </navigator>
