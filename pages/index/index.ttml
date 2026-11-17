@@ -1,6 +1,21 @@
 <navigator
   url="/pages/web/index"
   open-type="redirect" 
+  class="media as-me px-4 py-3"
+>
+  <view class="media-left">
+    <view class="is-avatar">
+      <text class="text">奶</text>
+    </view>
+  </view>
+  <view class="media-right text-white">
+
+  </view>
+</navigator>
+
+<navigator
+  url="/pages/web/index"
+  open-type="redirect" 
   hover-class="navigator-hover"
   hover-start-time="50" 
   hover-stay-time="400" 
