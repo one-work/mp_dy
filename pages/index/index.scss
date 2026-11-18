@@ -1,22 +1,5 @@
-navigator {
-  margin-top: 5rem;
-  display: block;
-  text-align: center;
-}
-
-.intro {
-  margin: 30px;
-  text-align: center;
-}
-
-.icon-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0 0px;
-}
-
-.icon-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
+page {
+  width: unset;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;  
 }

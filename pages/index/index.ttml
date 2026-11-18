@@ -13,30 +13,25 @@
   </view>
 </navigator>
 
-<navigator
-  url="/pages/web/index"
-  open-type="redirect" 
-  hover-class="navigator-hover"
-  hover-start-time="50" 
-  hover-stay-time="400" 
-  hover-stop-propagation="{{false}}"
->
-  <view class="icon-wrapper">
-    <image class="icon-image" src="/assets/logo.png"></image>
+<view class="card as-transparent">
+  <view class="card-header">
+    <text class="size-7 text-grey has-border-left-primary">常用功能</text>
   </view>
-  <view class="text-primary mt-1">工作台</view>
-</navigator>
-
-<navigator
-  url="/pages/web/index?path=org/board"
-  open-type="redirect" 
-  hover-class="navigator-hover"
-  hover-start-time="50" 
-  hover-stay-time="400" 
-  hover-stop-propagation="{{false}}"
->
-  <view class="icon-wrapper">
-    <image class="icon-image" src="/assets/light/list.svg"></image>
+  <view class="card-content fixed-grid has-3-cols">
+    <view class="grid">
+      <navigator
+        tt:for="{{res}}"
+        url="/pages/web/index?path={{item.path}}"
+        open-type="redirect" 
+        class="cell has-column-centered"
+        hover-class="navigator-hover"
+        hover-start-time="50" 
+        hover-stay-time="400" 
+        hover-stop-propagation="{{false}}"
+      >
+        <image class="icon is-medium text-primary" src="/assets/light/{{item.icon}}.svg"></image>
+        <view class="size-7 text-grey mt-1">{{item.name}}</view>
+      </navigator>
+    </view>
   </view>
-  <view class="text-info mt-1">个人中心</view>
-</navigator>
+</view>
