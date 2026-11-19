@@ -2,7 +2,7 @@ Page({
   onLoad(options) {
     const headers = {}
     if (options.auth_token) {
-      Object.assign(headers, { 
+      Object.assign(headers, {
         Authorization: options.auth_token
       })
     }
