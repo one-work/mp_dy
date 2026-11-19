@@ -1,6 +1,6 @@
 <navigator
-  url="/pages/web/index"
-  open-type="redirect" 
+  url="/pages/web/index?path=/org/me"
+  open-type="navigate" 
   class="media as-me px-4 py-3"
 >
   <view class="media-left">
@@ -22,7 +22,7 @@
       <navigator
         tt:for="{{res}}"
         url="/pages/web/index?path={{item.path}}"
-        open-type="redirect" 
+        open-type="navigate" 
         class="cell has-column-centered"
         hover-class="navigator-hover"
         hover-start-time="50" 
@@ -30,7 +30,7 @@
         hover-stop-propagation="{{false}}"
       >
         <image class="icon is-medium text-primary" src="/assets/light/{{item.icon}}.svg"></image>
-        <view class="size-7 text-grey mt-1">{{item.name}}</view>
+        <view class="size-7 text-grey is-wrap text-centered mt-1">{{item.name}}</view>
       </navigator>
     </view>
   </view>
