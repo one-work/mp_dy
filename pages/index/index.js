@@ -21,7 +21,7 @@ Page({
           })
         } else {
           this.setData({ 
-            res: res.data
+            menus: res.data.menus
           })
         }
       },

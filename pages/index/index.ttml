@@ -13,25 +13,46 @@
   </view>
 </navigator>
 
-<view class="card as-transparent">
-  <view class="card-header">
-    <text class="size-7 text-grey has-border-left-primary">常用功能</text>
-  </view>
-  <view class="card-content fixed-grid has-3-cols">
-    <view class="grid">
-      <navigator
-        tt:for="{{res}}"
-        url="/pages/web/index?path={{item.path}}"
-        open-type="navigate"
-        class="cell has-column-centered"
-        hover-class="navigator-hover"
-        hover-start-time="50" 
-        hover-stay-time="400" 
-        hover-stop-propagation="{{false}}"
-      >
-        <image class="icon is-medium text-primary" src="/assets/light/{{item.icon}}.svg"></image>
-        <view class="size-7 text-grey is-wrap text-centered mt-1">{{item.name}}</view>
-      </navigator>
+<view id="main">
+  <view class="card as-transparent">
+    <view class="card-header">
+      <text class="size-7 text-grey has-border-left-primary">常用功能</text>
+    </view>
+    <view class="card-content fixed-grid has-3-cols">
+      <view class="grid">
+        <navigator
+          tt:for="{{menus}}"
+          url="/pages/web/index?path={{item.path}}"
+          open-type="navigate"
+          class="cell has-column-centered"
+          hover-class="navigator-hover"
+          hover-start-time="50"
+          hover-stay-time="400"
+          hover-stop-propagation="{{false}}"
+        >
+          <image class="icon is-medium text-primary" src="/assets/light/{{item.icon}}.svg"></image>
+          <text class="size-7 text-grey is-wrap text-centered mt-1">{{item.name}}</view>
+        </navigator>
+      </view>
     </view>
   </view>
+</view>
+
+<view class="tabs as-bottom">
+  <navigator
+    open-type="navigate"
+    url="/pages/web/index?path=/"
+    class="tab"
+  >
+    <image class="icon is-medium" src="/assets/light/grid-2.svg"></image>
+    <text class="size-7">工作台</text> 
+  </navigator>
+  <navigator
+    open-type="redirect"
+    url="/pages/web/index?path=/org/board"
+    class="tab"
+  >
+    <image class="icon is-medium" src="/assets/light/user.svg"></image>
+    <text class="size-7">我的</text> 
+  </navigator>
 </view>
