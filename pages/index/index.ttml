@@ -1,19 +1,21 @@
 <navigator
   url="/pages/web/index?path=/org/me"
   open-type="navigate"
-  class="media as-me px-4 py-3"
+  class="media as-me px-4 py-3 background-light"
 >
   <view class="media-left">
     <view class="is-avatar">
-      <text class="text">奶</text>
+      <text class="text">用</text>
     </view>
   </view>
+  <view class="media-content"></view>
   <view class="media-right text-white">
-
+    <image class="icon is-small" src="/assets/light/qrcode.svg"></image>
+    <image class="icon is-small" src="/assets/light/chevron-right.svg"></image>
   </view>
 </navigator>
 
-<view id="main">
+<view id="main" class="px-3">
   <view class="card as-transparent">
     <view class="card-header">
       <text class="size-7 text-grey has-border-left-primary">常用功能</text>
