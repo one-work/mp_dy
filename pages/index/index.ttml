@@ -40,7 +40,7 @@
 
 <view class="tabs as-bottom">
   <navigator
-    open-type="navigate"
+    open-type="redirect"
     url="/pages/web/index?path=/"
     class="tab"
   >
