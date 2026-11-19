@@ -1,6 +1,6 @@
 <navigator
   url="/pages/web/index?path=/org/me"
-  open-type="navigate" 
+  open-type="navigate"
   class="media as-me px-4 py-3"
 >
   <view class="media-left">
@@ -22,7 +22,7 @@
       <navigator
         tt:for="{{res}}"
         url="/pages/web/index?path={{item.path}}"
-        open-type="navigate" 
+        open-type="navigate"
         class="cell has-column-centered"
         hover-class="navigator-hover"
         hover-start-time="50" 

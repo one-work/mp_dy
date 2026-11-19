@@ -16,14 +16,14 @@ Page({
             isLogin: res.isLogin,
             appid: APPID
           },
-          success: response => {
+          success: res => {
             tt.redirectTo({
-              url: '/pages/index/indexs?url',
+              url: `/pages/index/index?auth_token=${res.data.auth_token}`,
               fail: res => {
                 console.debug('nav back fail', res)
               },
               success: _res => {
-                console.debug('nav back success', response.data)
+                console.debug('nav back success', res.data)
               }
             })
           },
