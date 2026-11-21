@@ -33,7 +33,7 @@
           hover-stop-propagation="{{false}}"
         >
           <image class="icon is-medium text-primary" src="/assets/light/{{item.icon}}.svg"></image>
-          <text class="size-7 text-grey is-wrap text-centered mt-1">{{item.name}}</view>
+          <text class="size-7 text-grey is-wrap text-centered mt-1">{{item.name}}</text>
         </navigator>
       </view>
     </view>
