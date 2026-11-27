@@ -4,6 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build:styles": "npm run build:sass && npm run build:postcss",
+    "build:sass": "sass --no-source-map app.scss:app.ttss pages/index/index.scss:pages/index/index.ttss pages/login/index.scss:pages/login/index.ttss pages/login_index/index.scss:pages/login_index/index.ttss pages/web/index.scss:pages/web/index.ttss",
+    "build:postcss": "postcss app.ttss \"pages/**/*.ttss\" --replace --no-map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +22,7 @@
   "devDependencies": {
     "postcss": "^8.5.33",
     "postcss-cli": "^12.0.0",
-    "postcss-rem-to-responsive-pixel": "^7.0.9"
+    "postcss-rem-to-responsive-pixel": "^7.0.9",
+    "sass": "^1.108.2"
   }
 }

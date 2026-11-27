@@ -7,13 +7,12 @@
     "newFeature": true,
     "autoCompile": true,
     "compileHotReLoad": true,
-    "nativeCompile": true,
-    "useCompilerPlugins": ["sass"]
+    "nativeCompile": true
   },
   "appid": "ttd72ea19348128d0c01",
   "projectname": "OneWork超级个体",
   "douyinProjectType": "native",
   "scripts": {
-    "beforeCompile": "beforeCompile"
+    "beforeCompile": "npm run build:styles"
   }
 }
