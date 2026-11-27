@@ -3,8 +3,9 @@ module.exports = {
   plugins: [
     require('postcss-rem-to-responsive-pixel')(
       {
-        rootValue: 32,
+        rootValue: 30,
         transformUnit: 'rpx',
+        unitPrecision: 3,
         propList: ['*'],
         exclude: [],
         mediaQuery: true

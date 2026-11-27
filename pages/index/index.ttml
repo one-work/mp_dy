@@ -40,6 +40,8 @@
   </view>
 </view>
 
+<p class="text-grey">技术支持</p>
+
 <view class="tabs as-bottom">
   <navigator
     open-type="redirect"
